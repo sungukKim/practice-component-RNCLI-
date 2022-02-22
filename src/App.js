@@ -1,6 +1,7 @@
 import React from "react";
-import { Text, View, Button } from 'react-native';
-import MyButton from "./components/MyButton";
+import { View } from 'react-native';
+import EventButton from "./components/EventButton";
+import EventInput from "./components/EventInput";
 
 const App = () => {
     return (
@@ -12,15 +13,8 @@ const App = () => {
             justifyContent: 'center',
         }}
         >
-            <Text
-             style={{
-                  fontSize: 30, 
-                  marginBottom: 10,
-                }}
-            >
-                My Button Component
-                </Text>
-            <MyButton />
+            <EventButton />
+            <EventInput />
         </View>
     );
 };
